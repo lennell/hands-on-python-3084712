@@ -19,3 +19,9 @@ for i in range(5):
     print(i)
 
 # enumerate
+for i, name in enumerate(NAMES):
+    print(i,name)
+
+for name in NAMES:
+    mess = "Hej {}"
+    print(mess.format(name))
