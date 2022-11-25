@@ -14,7 +14,7 @@ EINSTEIN = {
 einstein_json = json.dumps(EINSTEIN)
 back_to_dict = json.loads(einstein_json)
 print(einstein_json)
-pprint(back_to_dict)
+print(back_to_dict)
 
 with open("laureates.csv", "r") as f:
     reader = csv.DictReader(f)
@@ -22,4 +22,5 @@ with open("laureates.csv", "r") as f:
 
 
 with open("laureates.json", "w") as f:
-    json.dump(laureates, f, indent=2)
+    #json.dump(laureates, f, indent=2)
+    f.write(str(laureates))
